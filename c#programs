@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+namespace abc
+{
+    public class switchcase
+    {
+        static void Main(string[] args)
+
+        { 
+            Console.Write("Enter the grade:");
+            string grade = Console.ReadLine();
+            Console.WriteLine("Enter a string:");
+            switch(grade)
+                {
+                    case "A":
+                    case "B":
+                    case "C":Console.WriteLine("You have entered C");
+                             goto case "D";
+                    case "D":Console.WriteLine("You have entered D");
+                        break;
+                    default:Console.WriteLine("Wrong choice");
+                        break;
+                }
+            }
+
+        
+    }
+}
